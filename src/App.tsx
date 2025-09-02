@@ -9,6 +9,7 @@ import Compare from './pages/Compare';
 import FAQ from './pages/FAQ';
 import BlogUpload from './pages/BlogUpload';
 import AILegacyRatersPost from './pages/BlogPost-AILegacyRaters';
+import QuotelyAIRevolutionPost from './pages/BlogPost-QuotelyAIRevolution';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
               <Route path="/blog-upload" element={<BlogUpload />} />
               <Route path="/blog/ai-legacy-raters" element={<AILegacyRatersPost />} />
+              <Route path="/blog/quotely-ai-revolution" element={<QuotelyAIRevolutionPost />} />
             </Routes>
           </main>
           <Footer />
