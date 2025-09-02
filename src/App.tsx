@@ -8,6 +8,7 @@ import Calculator from './pages/Calculator';
 import Compare from './pages/Compare';
 import FAQ from './pages/FAQ';
 import BlogUpload from './pages/BlogUpload';
+import AILegacyRatersPost from './pages/BlogPost-AILegacyRaters';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/compare" element={<Compare />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/blog-upload" element={<BlogUpload />} />
+              <Route path="/blog/ai-legacy-raters" element={<AILegacyRatersPost />} />
             </Routes>
           </main>
           <Footer />
