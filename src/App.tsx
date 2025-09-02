@@ -7,6 +7,7 @@ import Pricing from './pages/Pricing';
 import Calculator from './pages/Calculator';
 import Compare from './pages/Compare';
 import FAQ from './pages/FAQ';
+import BlogUpload from './pages/BlogUpload';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/calculator" element={<Calculator />} />
               <Route path="/compare" element={<Compare />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/blog-upload" element={<BlogUpload />} />
             </Routes>
           </main>
           <Footer />
