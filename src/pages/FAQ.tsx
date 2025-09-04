@@ -14,32 +14,32 @@ const FAQ: React.FC = () => {
     {
       category: 'General',
       question: 'What is Quotely?',
-      answer: 'Quotely is an AI-powered insurance quoting platform that helps agencies streamline their quoting process, integrate with multiple carriers, and boost conversion rates through intelligent automation.',
+      answer: 'Quotely is a modern insurance intelligence platform designed to streamline your quoting process with verified carrier integrations through TurboRater and professional-grade tools.',
     },
     {
       category: 'General',
       question: 'How does Quotely work?',
-      answer: 'Quotely connects to your existing carrier systems through APIs, allowing you to generate quotes from multiple carriers in seconds. Our AI analyzes customer data to provide personalized recommendations and automate follow-ups.',
+      answer: 'Quotely integrates with industry-standard platforms like TurboRater and Momentum AMP to provide accurate carrier data and streamline your workflow. Our web-based platform operates 24/7 at just $1.37/hour.',
     },
     {
       category: 'Pricing',
-      question: 'Is there a free trial available?',
-      answer: 'Yes! All plans include a 14-day free trial with full access to features. No credit card required to start.',
+      question: 'How can I get started with Quotely?',
+      answer: 'Contact our sales team at sales@tryquotely.com to schedule a personalized demo and discuss custom pricing options tailored to your agency\'s needs.',
     },
     {
       category: 'Pricing',
-      question: 'Can I change my plan later?',
-      answer: 'Absolutely! You can upgrade or downgrade your plan at any time. Changes take effect at the next billing cycle.',
+      question: 'What makes Quotely different?',
+      answer: 'Quotely combines AI-powered efficiency with verified carrier data, operating at a fraction of traditional staffing costs while maintaining professional-grade accuracy and reliability.',
     },
     {
       category: 'Pricing',
-      question: 'What payment methods do you accept?',
-      answer: 'We accept all major credit cards, ACH transfers, and wire transfers for enterprise accounts. Annual payments receive a 15% discount.',
+      question: 'What are the pricing options?',
+      answer: 'We offer flexible, custom pricing based on your agency\'s specific needs and size. Contact sales@tryquotely.com for a personalized quote and to discuss available options.',
     },
     {
       category: 'Features',
       question: 'Which insurance carriers are supported?',
-      answer: 'We integrate with over 100 insurance carriers including all major national and regional carriers. New carriers are added monthly based on customer requests.',
+      answer: 'Quotely provides verified carrier data through our partnership with TurboRater, ensuring accurate and up-to-date information from major insurance carriers.',
     },
     {
       category: 'Features',
@@ -54,7 +54,7 @@ const FAQ: React.FC = () => {
     {
       category: 'Security',
       question: 'Is my data secure?',
-      answer: 'Yes. We use bank-level 256-bit SSL encryption, are SOC 2 certified, and HIPAA compliant. All data is stored in secure, redundant data centers with 24/7 monitoring.',
+      answer: 'Yes. Quotely uses modern security practices including SSL encryption and secure cloud infrastructure to protect your data. We prioritize data security and privacy.',
     },
     {
       category: 'Security',
@@ -64,12 +64,12 @@ const FAQ: React.FC = () => {
     {
       category: 'Support',
       question: 'What kind of support is available?',
-      answer: 'Support varies by plan: Starter includes email support, Professional adds phone and priority support, and Enterprise includes a dedicated account manager and 24/7 support.',
+      answer: 'We provide professional email support at sales@tryquotely.com. Our team is committed to helping you get the most from the Quotely platform.',
     },
     {
       category: 'Support',
       question: 'Do you provide training?',
-      answer: 'Yes! We offer comprehensive training including video tutorials, documentation, webinars, and personalized onboarding sessions for Professional and Enterprise plans.',
+      answer: 'Yes! We offer implementation assistance and training to help your team get up and running quickly with the Quotely platform.'
     },
     {
       category: 'Technical',
@@ -79,7 +79,7 @@ const FAQ: React.FC = () => {
     {
       category: 'Technical',
       question: 'Is there an API available?',
-      answer: 'Yes, Professional and Enterprise plans include API access for custom integrations. Full documentation and SDKs are available for popular programming languages.',
+      answer: 'API access is available for custom integrations. Contact our sales team to discuss API capabilities and implementation options for your agency.'
     },
   ];
 

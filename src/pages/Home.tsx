@@ -7,37 +7,59 @@ const Home: React.FC = () => {
   return (
     <>
       <SEO 
-        title="Quotely - AI-Powered Insurance Quoting Platform"
-        description="Transform your insurance agency with Quotely's AI-powered quoting platform. Get real-time rates from 100+ carriers and boost conversions by 40%."
+        title="Quotely - Modern Insurance Intelligence Platform"
+        description="Streamline your insurance quoting process with Quotely's intelligent platform. Built for professional results with verified carrier integrations."
       />
       <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-primary-100 section-padding">
-        <div className="container-wrapper">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Transform Your Insurance Agency with <span className="text-primary-600">AI-Powered Quoting</span>
-              </h1>
-              <p className="text-xl text-gray-700 mb-8">
-                Quotely revolutionizes insurance quoting with intelligent automation, real-time rates, and seamless carrier integration. Boost your agency's efficiency by 10x.
+      <section className="bg-primary-800 text-white relative min-h-screen">
+        {/* Background Quotely Text */}
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden opacity-20 z-0">
+          <span className="text-[20vw] font-black text-white/10">Quotely</span>
+        </div>
+        
+        <div className="container-wrapper relative z-10 pt-16 pb-20">
+          <div className="max-w-4xl">
+            {/* Main Heading with Yellow Quotely */}
+            <h1 className="mb-8 leading-tight">
+              <span className="block text-6xl md:text-7xl lg:text-8xl font-black text-accent-500 mb-2">
+                Quotely
+              </span>
+              <span className="block text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-1">
+                Insurance Intelligence
+              </span>
+              <span className="block text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+                Platform
+              </span>
+            </h1>
+              <p className="text-xl text-white/90 mb-12 max-w-2xl">
+                Streamline your quote process, increase conversions, and grow your revenue with our intelligent insurance platform. Built for professional results.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/demo" className="btn-primary">
-                  Get Started Free <ArrowRight className="ml-2" size={20} />
-                </Link>
-                <Link to="/calculator" className="btn-secondary">
-                  Calculate Your ROI
-                </Link>
+              
+              {/* Stats Section */}
+              <div className="flex flex-col sm:flex-row gap-8 mb-12">
+                <div className="stat-item">
+                  <div className="text-5xl font-bold text-accent-500 mb-2">24/7</div>
+                  <div className="text-white/80">AI Operation</div>
+                </div>
+                <div className="stat-item">
+                  <div className="text-5xl font-bold text-accent-500 mb-2">$1.37</div>
+                  <div className="text-white/80">Cost Per Hour</div>
+                </div>
+                <div className="stat-item">
+                  <div className="text-5xl font-bold text-accent-500 mb-2">94.4%</div>
+                  <div className="text-white/80">Response Rate</div>
+                </div>
               </div>
-            </div>
-            <div className="relative">
-              <div className="bg-white rounded-lg shadow-2xl p-8">
-                <img 
-                  src="/api/placeholder/600/400" 
-                  alt="Quotely Dashboard" 
-                  className="w-full h-auto rounded-lg"
-                />
+              
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="mailto:sales@tryquotely.com" className="btn-primary">
+                  Get Early Access <ArrowRight className="ml-2" size={20} />
+                </a>
+                <Link to="/calculator" className="btn-secondary border-white/30 hover:border-white">
+                  Calculate ROI
+                </Link>
               </div>
             </div>
           </div>
@@ -45,63 +67,63 @@ const Home: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section className="section-padding">
+      <section className="section-padding bg-white">
         <div className="container-wrapper">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Why Choose Quotely?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Built by insurance professionals for insurance professionals
+            <p className="text-xl text-neutral-700 max-w-3xl mx-auto">
+              Built for insurance professionals who demand accuracy and efficiency
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="card">
-              <Zap className="text-primary-600 mb-4" size={48} />
-              <h3 className="text-xl font-semibold mb-2">Lightning Fast Quotes</h3>
-              <p className="text-gray-600">
-                Generate accurate quotes in seconds with our AI-powered engine that learns from millions of data points.
+              <Zap className="text-secondary-500 mb-4" size={48} />
+              <h3 className="text-xl font-semibold mb-2">Modern Web Platform</h3>
+              <p className="text-neutral-600">
+                Cloud-based solution accessible from any device with responsive design for desktop and mobile.
               </p>
             </div>
 
             <div className="card">
-              <Shield className="text-primary-600 mb-4" size={48} />
-              <h3 className="text-xl font-semibold mb-2">100+ Carrier Integration</h3>
-              <p className="text-gray-600">
-                Access real-time rates from over 100 insurance carriers through our unified API platform.
+              <Shield className="text-secondary-500 mb-4" size={48} />
+              <h3 className="text-xl font-semibold mb-2">Verified Integrations</h3>
+              <p className="text-neutral-600">
+                Authentic connections with TurboRater and Momentum AMP for accurate carrier data.
               </p>
             </div>
 
             <div className="card">
-              <TrendingUp className="text-primary-600 mb-4" size={48} />
-              <h3 className="text-xl font-semibold mb-2">Increase Conversion</h3>
-              <p className="text-gray-600">
-                Boost your conversion rates by up to 40% with intelligent recommendations and automated follow-ups.
+              <TrendingUp className="text-secondary-500 mb-4" size={48} />
+              <h3 className="text-xl font-semibold mb-2">Professional Tools</h3>
+              <p className="text-neutral-600">
+                Designed specifically for insurance professionals who demand accuracy and reliability.
               </p>
             </div>
 
             <div className="card">
-              <Users className="text-primary-600 mb-4" size={48} />
-              <h3 className="text-xl font-semibold mb-2">Team Collaboration</h3>
-              <p className="text-gray-600">
-                Seamlessly collaborate with your team with built-in CRM, task management, and communication tools.
+              <Users className="text-secondary-500 mb-4" size={48} />
+              <h3 className="text-xl font-semibold mb-2">Team Features</h3>
+              <p className="text-neutral-600">
+                Collaborate effectively with your agency team through our modern interface.
               </p>
             </div>
 
             <div className="card">
-              <Clock className="text-primary-600 mb-4" size={48} />
-              <h3 className="text-xl font-semibold mb-2">Save 10+ Hours Weekly</h3>
-              <p className="text-gray-600">
-                Automate repetitive tasks and focus on what matters most - building relationships with clients.
+              <Clock className="text-secondary-500 mb-4" size={48} />
+              <h3 className="text-xl font-semibold mb-2">24/7 AI Operation</h3>
+              <p className="text-neutral-600">
+                Platform operates continuously at just $1.37/hour compared to traditional staffing costs.
               </p>
             </div>
 
             <div className="card">
-              <Award className="text-primary-600 mb-4" size={48} />
-              <h3 className="text-xl font-semibold mb-2">Industry Leading Support</h3>
-              <p className="text-gray-600">
-                Get 24/7 support from our team of insurance experts and technical specialists.
+              <Award className="text-secondary-500 mb-4" size={48} />
+              <h3 className="text-xl font-semibold mb-2">Professional Support</h3>
+              <p className="text-neutral-600">
+                Contact our team at sales@tryquotely.com for personalized assistance.
               </p>
             </div>
           </div>
@@ -109,24 +131,24 @@ const Home: React.FC = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-white section-padding">
         <div className="container-wrapper">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-primary-600 mb-2">10,000+</div>
-              <p className="text-gray-600">Active Agencies</p>
+              <div className="text-4xl font-bold text-secondary-500 mb-2">24/7</div>
+              <p className="text-neutral-700">AI Operation</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary-600 mb-2">2M+</div>
-              <p className="text-gray-600">Quotes Generated</p>
+              <div className="text-4xl font-bold text-secondary-500 mb-2">$1.37</div>
+              <p className="text-neutral-700">Cost Per Hour</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary-600 mb-2">98%</div>
-              <p className="text-gray-600">Customer Satisfaction</p>
+              <div className="text-4xl font-bold text-secondary-500 mb-2">100%</div>
+              <p className="text-neutral-700">Web-Based</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary-600 mb-2">$500M+</div>
-              <p className="text-gray-600">Premiums Written</p>
+              <div className="text-4xl font-bold text-secondary-500 mb-2">2025</div>
+              <p className="text-neutral-700">Platform Launch</p>
             </div>
           </div>
         </div>
@@ -136,19 +158,22 @@ const Home: React.FC = () => {
       <section className="bg-primary-600 text-white section-padding">
         <div className="container-wrapper text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Transform Your Agency?
+            Ready to Modernize Your Insurance Business?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Join thousands of successful agencies using Quotely to streamline operations and boost revenue.
+            Join forward-thinking agencies exploring the future of insurance technology.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/demo" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
-              Start Free Trial
-            </Link>
-            <Link to="/pricing" className="btn-secondary bg-primary-700 text-white hover:bg-primary-800">
-              View Pricing
+            <a href="mailto:sales@tryquotely.com" className="btn-primary bg-secondary-500 text-white hover:bg-secondary-600">
+              Contact Sales Team
+            </a>
+            <Link to="/calculator" className="btn-secondary text-white border-white hover:bg-white hover:bg-opacity-10">
+              Calculate ROI
             </Link>
           </div>
+          <p className="mt-8 text-neutral-200">
+            For custom pricing and demos: <strong>sales@tryquotely.com</strong>
+          </p>
         </div>
       </section>
     </div>
