@@ -63,7 +63,6 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* Features Section */}
