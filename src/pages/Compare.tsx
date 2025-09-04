@@ -5,7 +5,7 @@ const Compare: React.FC = () => {
   const features = [
     { category: 'Core Features', items: [
       { name: 'Number of Agents', starter: 'Up to 5', professional: 'Up to 20', enterprise: 'Unlimited' },
-      { name: 'Monthly Quotes', starter: '100', professional: 'Unlimited', enterprise: 'Unlimited' },
+      { name: 'Monthly Quotes', starter: '50 included', professional: '250 total', enterprise: 'Custom volume' },
       { name: 'Carrier Integrations', starter: '5', professional: '50+', enterprise: 'All Available' },
       { name: 'Mobile App Access', starter: true, professional: true, enterprise: true },
     ]},
