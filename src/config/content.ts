@@ -1,19 +1,19 @@
 export const siteContent = {
   hero: {
-    title: "The modern insurance quoting platform built for independent agents",
-    subtitle: "Say goodbye to Applied Rater's 1990s interface",
-    cta: "Try Quotely Now"
+    title: "Next-Generation Insurance Intelligence Platform",
+    subtitle: "Transform your agency with AI-powered quoting in seconds, not minutes",
+    cta: "Get Started Today"
   },
   features: [
     {
-      icon: "✅",
-      title: "Modern Interface", 
-      description: "Clean, intuitive design that works on any device"
+      icon: "🚀",
+      title: "Instant Quote Generation", 
+      description: "AI-powered quotes in under 30 seconds - 10x faster than competitors"
     },
     {
-      icon: "⚡",
-      title: "Lightning Fast",
-      description: "Generate quotes in 30-60 seconds vs 3-5 minutes with EZLynx"
+      icon: "🤖",
+      title: "24/7 AI Assistant",
+      description: "Operates continuously at just $1.37/hour with 94.4% accuracy"
     },
     {
       icon: "🔌",
@@ -84,6 +84,36 @@ export const siteContent = {
     responseRate: "94.4%",
     quoteTime: "30-60 seconds",
     uptime: "99.9%"
+  },
+  pricing: {
+    title: "Need More Tokens?",
+    subtitle: "Add token packages anytime. Each token = 1 quote submission.",
+    packages: [
+      {
+        tokens: 50,
+        price: "$85",
+        savings: "Save $15",
+        perToken: "$1.70 per token"
+      },
+      {
+        tokens: 200,
+        price: "$340",
+        savings: "Save $60",
+        perToken: "$1.70 per token"
+      },
+      {
+        tokens: 500,
+        price: "$650",
+        savings: "Save $350",
+        perToken: "$1.30 per token"
+      },
+      {
+        tokens: 1000,
+        price: "$1200",
+        savings: "Save $800",
+        perToken: "$1.20 per token"
+      }
+    ]
   },
   contact: {
     email: "sales@tryquotely.com",
