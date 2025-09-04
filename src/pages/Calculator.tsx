@@ -107,7 +107,7 @@ const Calculator: React.FC = () => {
                     type="number"
                     value={calculatorData.numAgents}
                     onChange={(e) => handleInputChange('numAgents', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
                   />
                 </div>
 
@@ -119,7 +119,7 @@ const Calculator: React.FC = () => {
                     type="number"
                     value={calculatorData.quotesPerAgent}
                     onChange={(e) => handleInputChange('quotesPerAgent', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
                   />
                 </div>
 
@@ -131,7 +131,7 @@ const Calculator: React.FC = () => {
                     type="number"
                     value={calculatorData.conversionRate}
                     onChange={(e) => handleInputChange('conversionRate', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
                   />
                 </div>
 
@@ -143,7 +143,7 @@ const Calculator: React.FC = () => {
                     type="number"
                     value={calculatorData.averagePremium}
                     onChange={(e) => handleInputChange('averagePremium', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
                   />
                 </div>
 
@@ -155,7 +155,7 @@ const Calculator: React.FC = () => {
                     type="number"
                     value={calculatorData.commissionRate}
                     onChange={(e) => handleInputChange('commissionRate', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
                   />
                 </div>
               </div>
