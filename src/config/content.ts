@@ -86,8 +86,30 @@ export const siteContent = {
     uptime: "99.9%"
   },
   pricing: {
-    title: "Need More Tokens?",
-    subtitle: "Add token packages anytime. Each token = 1 quote submission.",
+    title: "Simple, Transparent Pricing",
+    subtitle: "Start with our Core Platform and add tokens as needed",
+    corePlatform: {
+      name: "Core Platform",
+      originalPrice: "$1699",
+      price: "$999",
+      savings: "Save $700",
+      description: "Everything you need to get started",
+      includes: "50 tokens included",
+      features: [
+        "Full platform access",
+        "All carrier integrations", 
+        "Mobile & desktop apps",
+        "Real-time quote tracking",
+        "PDF exports & email delivery",
+        "Customer management",
+        "24/7 AI assistance",
+        "Technical support"
+      ]
+    },
+    tokenPackages: {
+      title: "Need More Tokens?",
+      subtitle: "Add token packages anytime. Each token = 1 quote submission.",
+    },
     packages: [
       {
         tokens: 50,

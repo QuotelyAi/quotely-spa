@@ -72,19 +72,24 @@ const Compare: React.FC = () => {
               <tr className="bg-gray-50">
                 <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Features</th>
                 <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">
-                  <div>Starter</div>
-                  <div className="text-lg font-bold text-gray-900 mt-1">Contact for Pricing</div>
+                  <div>Core Platform</div>
+                  <div className="text-xl font-bold text-gray-900 mt-1">
+                    <span className="line-through text-gray-400 text-sm">$1699</span> $999/mo
+                  </div>
+                  <div className="text-xs text-green-600 font-semibold">50 tokens included</div>
                 </th>
                 <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 bg-primary-50">
                   <div className="flex items-center justify-center">
-                    Professional
+                    Core + 200 Tokens
                     <span className="ml-2 bg-primary-500 text-white text-xs px-2 py-1 rounded">Popular</span>
                   </div>
-                  <div className="text-lg font-bold text-primary-600 mt-1">Contact for Pricing</div>
+                  <div className="text-xl font-bold text-primary-600 mt-1">$1339/mo</div>
+                  <div className="text-xs text-gray-600">Core + 200 token package</div>
                 </th>
                 <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">
                   <div>Enterprise</div>
-                  <div className="text-lg font-bold text-gray-900 mt-1">Custom Pricing</div>
+                  <div className="text-xl font-bold text-gray-900 mt-1">Custom</div>
+                  <div className="text-xs text-gray-600">Volume pricing available</div>
                 </th>
               </tr>
             </thead>
@@ -133,10 +138,11 @@ const Compare: React.FC = () => {
         </div>
 
         <div className="mt-12 bg-gray-50 rounded-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Get Custom Pricing for Your Agency</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Transparent Token-Based Pricing</h2>
           <p className="text-gray-700 mb-6">
-            Contact our sales team at <strong>sales@tryquotely.com</strong> for personalized pricing based on your agency's specific needs. 
-            Our AI-powered platform operates at just $1.37/hour - significantly less than traditional solutions.
+            <strong>Core Platform: $999/month</strong> (marked down from $1699) includes 50 tokens to get you started.
+            Need more? Add token packages anytime: 50 tokens ($85), 200 tokens ($340), 500 tokens ($650), or 1000 tokens ($1200).
+            Contact <strong>sales@tryquotely.com</strong> for enterprise volume discounts.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="mailto:sales@tryquotely.com" className="btn-primary">
