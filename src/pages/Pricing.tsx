@@ -223,7 +223,7 @@ const Pricing: React.FC = () => {
           <h2 className="text-2xl font-bold mb-4" style={{ color: theme.colors.textPrimary }}>
             Why Quotely's Pricing Works for You
           </h2>
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <div>
               <div className="text-3xl font-bold mb-2" style={{ color: theme.colors.secondary }}>
                 $999
@@ -238,14 +238,6 @@ const Pricing: React.FC = () => {
               </div>
               <p style={{ color: theme.colors.textSecondary }}>
                 Tokens included every month with Core Platform
-              </p>
-            </div>
-            <div>
-              <div className="text-3xl font-bold mb-2" style={{ color: theme.colors.secondary }}>
-                No Expiry
-              </div>
-              <p style={{ color: theme.colors.textSecondary }}>
-                Unused tokens roll over - never lose what you paid for
               </p>
             </div>
           </div>
@@ -263,14 +255,6 @@ const Pricing: React.FC = () => {
               </h3>
               <p style={{ color: theme.colors.textSecondary }}>
                 Full platform access with all features, integrations, mobile apps, and 50 tokens to get you started each month. This covers everything most agencies need.
-              </p>
-            </div>
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="font-semibold mb-2" style={{ color: theme.colors.primary }}>
-                Do the 50 included tokens roll over?
-              </h3>
-              <p style={{ color: theme.colors.textSecondary }}>
-                The 50 tokens included with your monthly Core Platform subscription are use-it-or-lose-it. However, any additional token packages you purchase never expire and always roll over.
               </p>
             </div>
             <div className="bg-white rounded-lg shadow p-6">
