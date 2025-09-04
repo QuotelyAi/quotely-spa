@@ -73,18 +73,18 @@ const Compare: React.FC = () => {
                 <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Features</th>
                 <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">
                   <div>Starter</div>
-                  <div className="text-2xl font-bold text-gray-900 mt-1">$299/mo</div>
+                  <div className="text-lg font-bold text-gray-900 mt-1">Contact for Pricing</div>
                 </th>
                 <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 bg-primary-50">
                   <div className="flex items-center justify-center">
                     Professional
                     <span className="ml-2 bg-primary-500 text-white text-xs px-2 py-1 rounded">Popular</span>
                   </div>
-                  <div className="text-2xl font-bold text-primary-600 mt-1">$799/mo</div>
+                  <div className="text-lg font-bold text-primary-600 mt-1">Contact for Pricing</div>
                 </th>
                 <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">
                   <div>Enterprise</div>
-                  <div className="text-2xl font-bold text-gray-900 mt-1">Custom</div>
+                  <div className="text-lg font-bold text-gray-900 mt-1">Custom Pricing</div>
                 </th>
               </tr>
             </thead>
@@ -113,17 +113,17 @@ const Compare: React.FC = () => {
               <tr className="bg-gray-50">
                 <td className="px-6 py-4"></td>
                 <td className="px-6 py-4 text-center">
-                  <a href="/demo?plan=starter" className="btn-secondary text-sm">
-                    Start Free Trial
+                  <a href="mailto:sales@tryquotely.com?subject=Quotely Starter Plan Inquiry" className="btn-secondary text-sm">
+                    Get Pricing
                   </a>
                 </td>
                 <td className="px-6 py-4 text-center bg-primary-50">
-                  <a href="/demo?plan=professional" className="btn-primary text-sm">
-                    Start Free Trial
+                  <a href="mailto:sales@tryquotely.com?subject=Quotely Professional Plan Inquiry" className="btn-primary text-sm">
+                    Get Pricing
                   </a>
                 </td>
                 <td className="px-6 py-4 text-center">
-                  <a href="/contact?plan=enterprise" className="btn-secondary text-sm">
+                  <a href="mailto:sales@tryquotely.com?subject=Quotely Enterprise Plan Inquiry" className="btn-secondary text-sm">
                     Contact Sales
                   </a>
                 </td>
@@ -133,13 +133,14 @@ const Compare: React.FC = () => {
         </div>
 
         <div className="mt-12 bg-gray-50 rounded-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Need Help Choosing?</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Get Custom Pricing for Your Agency</h2>
           <p className="text-gray-700 mb-6">
-            Our team is here to help you find the perfect plan for your agency's unique needs.
+            Contact our sales team at <strong>sales@tryquotely.com</strong> for personalized pricing based on your agency's specific needs. 
+            Our AI-powered platform operates at just $1.37/hour - significantly less than traditional solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="/contact" className="btn-primary">
-              Talk to Sales
+            <a href="mailto:sales@tryquotely.com" className="btn-primary">
+              Email Sales Team
             </a>
             <a href="/calculator" className="btn-secondary">
               Calculate Your ROI
