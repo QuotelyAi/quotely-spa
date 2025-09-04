@@ -7,6 +7,7 @@ import Pricing from './pages/Pricing';
 import Calculator from './pages/Calculator';
 import Compare from './pages/Compare';
 import FAQ from './pages/FAQ';
+import Blog from './pages/Blog';
 import BlogUpload from './pages/BlogUpload';
 import AILegacyRatersPost from './pages/BlogPost-AILegacyRaters';
 import QuotelyAIRevolutionPost from './pages/BlogPost-QuotelyAIRevolution';
@@ -24,6 +25,7 @@ function App() {
               <Route path="/calculator" element={<Calculator />} />
               <Route path="/compare" element={<Compare />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/blog" element={<Blog />} />
               <Route path="/blog-upload" element={<BlogUpload />} />
               <Route path="/blog/ai-legacy-raters" element={<AILegacyRatersPost />} />
               <Route path="/blog/quotely-ai-revolution" element={<QuotelyAIRevolutionPost />} />

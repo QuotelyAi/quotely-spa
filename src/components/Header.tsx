@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import SearchAtlasOtto from './SearchAtlasOtto';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,6 +42,7 @@ const Header: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
+              <SearchAtlasOtto />
               <a
                 href="mailto:sales@tryquotely.com"
                 className="btn-primary text-sm"
