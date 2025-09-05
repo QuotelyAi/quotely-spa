@@ -269,8 +269,8 @@ const SearchAtlasOtto: React.FC = () => {
               <input
                 ref={inputRef}
                 type="text"
-                placeholder="Search Quotely... (Atlas Otto powered search)"
-                className="flex-1 px-4 py-4 text-lg focus:outline-none"
+                placeholder="Search Quotely... (OTTO by SearchAtlas powered search)"
+                className="flex-1 px-4 py-4 text-lg text-gray-900 focus:outline-none"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
               />
@@ -345,7 +345,7 @@ const SearchAtlasOtto: React.FC = () => {
 
             {/* Footer */}
             <div className="px-4 py-3 border-t border-neutral-200 bg-neutral-50 text-xs text-neutral-500">
-              <span className="mr-4">Atlas Otto Search Integration</span>
+              <span className="mr-4">OTTO by SearchAtlas Integration</span>
               <span>Press <kbd className="px-1.5 py-0.5 bg-white rounded border border-neutral-300">ESC</kbd> to close</span>
             </div>
           </div>
