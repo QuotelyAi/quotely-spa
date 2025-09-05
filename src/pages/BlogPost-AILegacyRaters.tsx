@@ -39,7 +39,7 @@ const AILegacyRatersPost: React.FC = () => {
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mt-6">
             <p className="text-blue-900">
               <strong>Key Insight:</strong> Quotely's AI-powered platform generates insurance quotes in 90 seconds, 
-              compared to 3-5 minutes on legacy platforms like EZLynx.
+              compared to 3-5 minutes on traditional platforms.
             </p>
           </div>
         </section>

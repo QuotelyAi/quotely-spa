@@ -35,7 +35,7 @@ const Calculator: React.FC = () => {
     const improvedYearlyCommission = improvedMonthlyCommission * 12;
 
     const additionalYearlyRevenue = improvedYearlyCommission - yearlyCommission;
-    const roi = ((additionalYearlyRevenue - 9588) / 9588) * 100; // Based on $799/month cost
+    const roi = ((additionalYearlyRevenue - 11988) / 11988) * 100; // Based on $999/month cost
 
     return {
       current: {
@@ -223,7 +223,7 @@ const Calculator: React.FC = () => {
                 </div>
                 <div className="pt-4 border-t border-green-200">
                   <p className="text-sm text-green-700">
-                    Based on 40% conversion improvement and Professional plan ($799/month)
+                    Based on 40% conversion improvement and Core Platform ($999/month)
                   </p>
                 </div>
               </div>

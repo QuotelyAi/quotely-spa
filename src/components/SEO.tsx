@@ -11,8 +11,8 @@ interface SEOProps {
 
 const SEO: React.FC<SEOProps> = ({
   title = 'Quotely - AI-Powered Insurance Quoting Platform',
-  description = 'Transform your insurance agency with Quotely\'s AI-powered quoting platform. Get real-time rates from 100+ carriers, boost conversions by 40%, and save 10+ hours weekly.',
-  keywords = 'insurance quoting, insurance software, agency management, AI insurance, insurance CRM, carrier integration, insurance automation',
+  description = 'Transform your insurance agency with Quotely\'s AI-powered quoting platform. Get real-time rates through verified integrations, boost conversions by 40%, and save 10+ hours weekly.',
+  keywords = 'insurance quoting, insurance software, agency management, AI insurance, Momentum AMP, GAIL, carrier integration, insurance automation',
   image = '/og-image.png',
   url = 'https://tryquotely.com',
 }) => {

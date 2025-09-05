@@ -11,6 +11,7 @@ import Blog from './pages/Blog';
 import BlogUpload from './pages/BlogUpload';
 import AILegacyRatersPost from './pages/BlogPost-AILegacyRaters';
 import QuotelyAIRevolutionPost from './pages/BlogPost-QuotelyAIRevolution';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route path="/blog-upload" element={<BlogUpload />} />
               <Route path="/blog/ai-legacy-raters" element={<AILegacyRatersPost />} />
               <Route path="/blog/quotely-ai-revolution" element={<QuotelyAIRevolutionPost />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
           <Footer />

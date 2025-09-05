@@ -22,7 +22,7 @@ const Compare: React.FC = () => {
       { name: 'Real-time Dashboards', starter: false, professional: true, enterprise: true },
     ]},
     { category: 'Integrations', items: [
-      { name: 'CRM Integration', starter: false, professional: true, enterprise: true },
+      { name: 'Momentum AMP & GAIL Integration', starter: false, professional: true, enterprise: true },
       { name: 'API Access', starter: false, professional: true, enterprise: true },
       { name: 'Custom Integrations', starter: false, professional: false, enterprise: true },
       { name: 'Webhook Support', starter: false, professional: true, enterprise: true },
@@ -87,7 +87,7 @@ const Compare: React.FC = () => {
                   <div className="text-xs text-gray-600">Core + 200 token package</div>
                 </th>
                 <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">
-                  <div>Enterprise</div>
+                  <div>Core + Custom Tokens</div>
                   <div className="text-xl font-bold text-gray-900 mt-1">Custom</div>
                   <div className="text-xs text-gray-600">Volume pricing available</div>
                 </th>
@@ -118,17 +118,17 @@ const Compare: React.FC = () => {
               <tr className="bg-gray-50">
                 <td className="px-6 py-4"></td>
                 <td className="px-6 py-4 text-center">
-                  <a href="mailto:sales@tryquotely.com?subject=Quotely Starter Plan Inquiry" className="btn-secondary text-sm">
+                  <a href="mailto:sales@tryquotely.com?subject=Quotely Core Platform Inquiry" className="btn-secondary text-sm">
                     Get Pricing
                   </a>
                 </td>
                 <td className="px-6 py-4 text-center bg-primary-50">
-                  <a href="mailto:sales@tryquotely.com?subject=Quotely Professional Plan Inquiry" className="btn-primary text-sm">
+                  <a href="mailto:sales@tryquotely.com?subject=Quotely Core Plus 200 Tokens Inquiry" className="btn-primary text-sm">
                     Get Pricing
                   </a>
                 </td>
                 <td className="px-6 py-4 text-center">
-                  <a href="mailto:sales@tryquotely.com?subject=Quotely Enterprise Plan Inquiry" className="btn-secondary text-sm">
+                  <a href="mailto:sales@tryquotely.com?subject=Quotely Custom Token Package Inquiry" className="btn-secondary text-sm">
                     Contact Sales
                   </a>
                 </td>

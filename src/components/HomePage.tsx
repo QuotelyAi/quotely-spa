@@ -1,6 +1,7 @@
 import React from 'react';
 import { siteContent, theme } from '../config';
 import { Link } from 'react-router-dom';
+import YouTubeEmbed from './YouTubeEmbed';
 
 export const HomePage: React.FC = () => {
   return (
@@ -75,10 +76,41 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Features Grid */}
+      {/* Video Demo Section */}
       <section 
         className="py-16 px-4"
         style={{ backgroundColor: theme.colors.backgroundAlt }}
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 
+            className="text-3xl md:text-4xl font-bold text-center mb-8"
+            style={{ color: theme.colors.textPrimary }}
+          >
+            See Quotely in Action
+          </h2>
+          <p 
+            className="text-lg text-center mb-10 opacity-80"
+            style={{ color: theme.colors.textSecondary }}
+          >
+            Watch how Quotely revolutionizes insurance quoting with AI-powered automation
+          </p>
+          <YouTubeEmbed 
+            videoId="dQw4w9WgXcQ"
+            title="Quotely Platform Demo"
+            className="shadow-2xl"
+          />
+          <div className="text-center mt-8">
+            <p className="text-sm opacity-70" style={{ color: theme.colors.textSecondary }}>
+              Replace 'dQw4w9WgXcQ' with your actual YouTube video ID
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Grid */}
+      <section 
+        className="py-16 px-4"
+        style={{ backgroundColor: theme.colors.background }}
       >
         <div className="max-w-6xl mx-auto">
           <h2 
@@ -168,8 +200,8 @@ export const HomePage: React.FC = () => {
                     >
                       {feature.name}
                     </td>
-                    <td className="p-4 text-center">{feature.appliedRater}</td>
-                    <td className="p-4 text-center">{feature.ezlynx}</td>
+                    <td className="p-4 text-center">{feature.traditionalSystems}</td>
+                    <td className="p-4 text-center">{feature.legacyPlatforms}</td>
                     <td 
                       className="p-4 text-center font-semibold"
                       style={{ color: theme.colors.success }}

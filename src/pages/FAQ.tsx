@@ -44,12 +44,12 @@ const FAQ: React.FC = () => {
     {
       category: 'Features',
       question: 'Can I import my existing client data?',
-      answer: 'Yes! We support bulk imports from CSV, Excel, and most popular CRM systems. Our onboarding team will help you migrate your data seamlessly.',
+      answer: 'Yes! We support bulk imports from CSV and Excel files. Our onboarding team will help you migrate your data seamlessly.',
     },
     {
       category: 'Features',
       question: 'Does Quotely replace my agency management system?',
-      answer: 'Quotely can work standalone or integrate with your existing agency management system. We have native integrations with Applied Epic, AMS360, and other popular platforms.',
+      answer: 'Quotely can work standalone or integrate with your existing agency management system. We have integrations with Momentum AMP by NowCerts and GAIL.',
     },
     {
       category: 'Security',

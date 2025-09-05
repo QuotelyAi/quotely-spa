@@ -23,7 +23,7 @@ export const siteContent = {
     {
       icon: "💰",
       title: "Transparent Pricing",
-      description: "No hidden fees like EZLynx. What you see is what you pay"
+      description: "Clear token-based pricing. What you see is what you pay"
     },
     {
       icon: "📱",
@@ -38,42 +38,42 @@ export const siteContent = {
   ],
   comparison: {
     title: "Why Agents Choose Quotely",
-    competitors: ["Applied Rater", "EZLynx", "Quotely"],
+    competitors: ["Traditional Systems", "Legacy Platforms", "Quotely"],
     features: [
       {
         name: "User Interface",
-        appliedRater: "❌ Outdated",
-        ezlynx: "⚠️ Average", 
+        traditionalSystems: "❌ Outdated",
+        legacyPlatforms: "⚠️ Average", 
         quotely: "✅ Modern & Intuitive"
       },
       {
         name: "Mobile Support",
-        appliedRater: "❌ Limited",
-        ezlynx: "⚠️ Basic",
+        traditionalSystems: "❌ Limited",
+        legacyPlatforms: "⚠️ Basic",
         quotely: "✅ Full Featured"
       },
       {
         name: "Quote Speed", 
-        appliedRater: "⚠️ 2-4 minutes",
-        ezlynx: "⚠️ 3-5 minutes",
+        traditionalSystems: "⚠️ 2-4 minutes",
+        legacyPlatforms: "⚠️ 3-5 minutes",
         quotely: "✅ 30-60 seconds"
       },
       {
         name: "API Access",
-        appliedRater: "❌ Restricted", 
-        ezlynx: "⚠️ Limited & Expensive",
+        traditionalSystems: "❌ Restricted", 
+        legacyPlatforms: "⚠️ Limited & Expensive",
         quotely: "✅ Full REST API Included"
       },
       {
         name: "Pricing Transparency",
-        appliedRater: "⚠️ Hidden Fees",
-        ezlynx: "❌ Multiple Add-ons", 
-        quotely: "✅ All-Inclusive"
+        traditionalSystems: "⚠️ Hidden Fees",
+        legacyPlatforms: "❌ Multiple Add-ons", 
+        quotely: "✅ Token-Based"
       },
       {
         name: "Training Required",
-        appliedRater: "❌ 2-4 Weeks",
-        ezlynx: "⚠️ 1-2 Weeks",
+        traditionalSystems: "❌ 2-4 Weeks",
+        legacyPlatforms: "⚠️ 1-2 Weeks",
         quotely: "✅ 1-2 Hours"
       }
     ]
