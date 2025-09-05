@@ -1,0 +1,17 @@
+# Robots.txt for tryquotely.com
+User-agent: *
+Allow: /
+
+# Block sensitive areas
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /settings/
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Sitemap
+Sitemap: https://tryquotely.com/sitemap.xml
