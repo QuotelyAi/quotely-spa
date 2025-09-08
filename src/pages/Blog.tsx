@@ -2,75 +2,32 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Calendar, Clock, ArrowRight, Tag } from 'lucide-react';
 import SEO from '../components/SEO';
-
-interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  readTime: string;
-  tags: string[];
-  path: string;
-  image?: string;
-}
+import { blogPosts as importedBlogPosts } from '../data/blogPosts';
 
 const Blog: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
-  // Blog posts data
-  const blogPosts: BlogPost[] = [
-    {
-      id: '1',
-      title: 'Why AI is Making Legacy Insurance Raters Obsolete',
-      excerpt: 'Discover how artificial intelligence is revolutionizing insurance rating systems and why traditional methods are becoming outdated in the modern insurance landscape.',
-      date: 'September 3, 2025',
-      readTime: '5 min read',
-      tags: ['AI', 'Insurance Technology', 'Innovation'],
-      path: '/blog/ai-legacy-raters',
-      image: '/api/placeholder/800/400'
-    },
-    {
-      id: '2',
-      title: "The Quotely AI Revolution: $1.37/Hour vs $15+/Hour Staff",
-      excerpt: 'Learn how Quotely\'s AI-powered platform operates at just $1.37 per hour, delivering 24/7 efficiency compared to traditional staffing costs.',
-      date: 'September 2, 2025',
-      readTime: '7 min read',
-      tags: ['Cost Savings', 'AI', 'Efficiency'],
-      path: '/blog/quotely-ai-revolution',
-      image: '/api/placeholder/800/400'
-    },
-    {
-      id: '3',
-      title: 'TurboRater Integration: Verified Carrier Data at Your Fingertips',
-      excerpt: 'Explore how Quotely\'s partnership with TurboRater provides accurate, real-time carrier data for insurance professionals.',
-      date: 'August 30, 2025',
-      readTime: '4 min read',
-      tags: ['Integrations', 'Carriers', 'TurboRater'],
-      path: '#',
-      image: '/api/placeholder/800/400'
-    },
-    {
-      id: '4',
-      title: 'Understanding Insurance Market Intelligence with GAIL AI',
-      excerpt: 'Deep dive into how GAIL AI market intelligence enhances your competitive advantage in the insurance industry.',
-      date: 'August 28, 2025',
-      readTime: '6 min read',
-      tags: ['GAIL AI', 'Market Intelligence', 'Analytics'],
-      path: '#',
-      image: '/api/placeholder/800/400'
-    },
-    {
-      id: '5',
-      title: 'The Future of Insurance: Web-Based vs Desktop Applications',
-      excerpt: 'Why modern insurance agencies are choosing cloud-based solutions over traditional desktop software.',
-      date: 'August 25, 2025',
-      readTime: '5 min read',
-      tags: ['Technology', 'Cloud', 'Future Trends'],
-      path: '#',
-      image: '/api/placeholder/800/400'
-    }
-  ];
+  // Convert imported blog posts to the expected format
+  const blogPosts = importedBlogPosts.map(post => ({
+    id: post.id,
+    title: post.title,
+    excerpt: post.excerpt,
+    date: new Date(post.date).toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    }),
+    readTime: post.readTime,
+    tags: post.category === 'Digital Transformation' 
+      ? ['Digital Transformation', 'Automation', 'Innovation']
+      : post.category === 'AI & Technology'
+      ? ['AI', 'Insurance Technology', 'Innovation']
+      : ['Cost Savings', 'AI', 'Efficiency'],
+    path: `/blog/${post.slug}`,
+    image: post.image || '/api/placeholder/800/400'
+  }));
+
 
   // Get all unique tags
   const allTags = Array.from(
