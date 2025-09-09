@@ -209,6 +209,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '8 min read',
     category: 'AI & Technology',
     featured: false,
+    image: '/images/blog/ai-legacy-raters-hero.svg',
     content: `
 <div class="blog-content">
   <p class="lead">The insurance industry is experiencing a paradigm shift as artificial intelligence transforms how policies are rated and priced. Legacy rating systems, once the backbone of insurance operations, are struggling to keep pace with modern demands.</p>
@@ -277,6 +278,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '6 min read',
     category: 'Cost Analysis',
     featured: false,
+    image: '/images/blog/quotely-ai-revolution-hero.svg',
     content: `
 <div class="blog-content">
   <p class="lead">Insurance agencies face mounting pressure to reduce operational costs while improving service quality. Quotely's AI-powered platform offers a revolutionary solution: 24/7 operation at just $1.37 per hour.</p>
