@@ -122,12 +122,23 @@ const Blog: React.FC = () => {
                 {filteredPosts.map(post => (
                   <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                     {/* Post Image */}
-                    <div className="aspect-video bg-neutral-200">
-                      <img 
-                        src={post.image} 
-                        alt={post.title}
-                        className="w-full h-full object-cover"
-                      />
+                    <div className="aspect-video bg-gradient-to-br from-primary-600 to-secondary-600 flex items-center justify-center">
+                      {post.image ? (
+                        <img 
+                          src={post.image} 
+                          alt={post.title}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="text-white text-center p-6">
+                          <svg className="w-16 h-16 mx-auto mb-2 opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                          </svg>
+                          <p className="text-sm font-semibold opacity-90">
+                            {post.tags && post.tags[0] ? post.tags[0] : 'Article'}
+                          </p>
+                        </div>
+                      )}
                     </div>
                     
                     {/* Post Content */}

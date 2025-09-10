@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '12 min read',
     category: 'Digital Transformation',
     featured: true,
-    image: 'https://storage.googleapis.com/content-assistant-images-temp/a2728ec4-e1bd-4b75-9118-b389c4c8424f.webp',
+    image: undefined,
     content: `
 <div class="blog-content">
   <img src="https://storage.googleapis.com/content-assistant-images-temp/a2728ec4-e1bd-4b75-9118-b389c4c8424f.webp" alt="Insurance professionals collaborating on an insurtech platform in a modern office setting" class="w-full rounded-lg mb-8">
@@ -209,7 +209,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '8 min read',
     category: 'AI & Technology',
     featured: false,
-    image: 'https://storage.googleapis.com/content-assistant-images-temp/ai-legacy-raters-hero.webp',
+    image: undefined,
     content: `
 <div class="blog-content">
   <p class="lead">The insurance industry is experiencing a paradigm shift as artificial intelligence transforms how policies are rated and priced. Legacy rating systems, once the backbone of insurance operations, are struggling to keep pace with modern demands.</p>
@@ -278,7 +278,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '6 min read',
     category: 'Cost Analysis',
     featured: false,
-    image: 'https://storage.googleapis.com/content-assistant-images-temp/quotely-ai-revolution-hero.webp',
+    image: undefined,
     content: `
 <div class="blog-content">
   <p class="lead">Insurance agencies face mounting pressure to reduce operational costs while improving service quality. Quotely's AI-powered platform offers a revolutionary solution: 24/7 operation at just $1.37 per hour.</p>
@@ -365,7 +365,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '25 min read',
     category: 'AI & Technology',
     featured: true,
-    image: 'https://storage.googleapis.com/content-assistant-images-temp/a-a-futuristic-cityscape-illuminate-d7487a70-26724732-099c-4590-b2c5-830025c2be59.webp',
+    image: undefined,
     content: 'AI Technology article content'
   }
 ];
