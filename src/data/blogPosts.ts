@@ -14,6 +14,19 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'ai-technology-innovations-new',
+    slug: 'ai-technology-innovations-new',
+    title: 'AI Technology: Key Innovations Shaping Our Future',
+    excerpt: 'Explore key AI innovations shaping our future, including advancements in machine learning, natural language processing, and computer vision.',
+    author: 'Quotely - Dustin Wyzard',
+    date: '2024-12-10',
+    readTime: '15 min read',
+    category: 'AI & Technology',
+    featured: true,
+    image: 'https://storage.googleapis.com/content-assistant-images-temp/5fb072fc-582c-4990-82d0-4ebaa730aabe.webp',
+    content: ''
+  },
+  {
     id: 'insurtech-operating-system',
     slug: 'insurtech-operating-system-platform',
     title: 'Quotely: Modern Insurtech Operating System Platform for Insurance Agency Automation and Digital Transformation',

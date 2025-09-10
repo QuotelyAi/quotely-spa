@@ -10,6 +10,7 @@ import FAQ from './pages/FAQ';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import BlogPostAITechnologyInnovations from './pages/BlogPost-AITechnologyInnovations';
+import BlogPostAITechnologyInnovationsNew from './pages/BlogPost-AITechnologyInnovationsNew';
 import BlogPostAILegacyRaters from './pages/BlogPost-AILegacyRaters';
 import BlogPostQuotelyAIRevolution from './pages/BlogPost-QuotelyAIRevolution';
 import Contact from './pages/Contact';
@@ -29,6 +30,7 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/ai-technology-innovations" element={<BlogPostAITechnologyInnovations />} />
+              <Route path="/blog/ai-technology-innovations-new" element={<BlogPostAITechnologyInnovationsNew />} />
               <Route path="/blog/ai-legacy-raters" element={<BlogPostAILegacyRaters />} />
               <Route path="/blog/quotely-ai-revolution" element={<BlogPostQuotelyAIRevolution />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
