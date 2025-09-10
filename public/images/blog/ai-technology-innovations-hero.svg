@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#302b63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#24243e;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="neonBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0080ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="neonPink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0080;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9d00ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5000ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1200" height="600" fill="url(#skyGradient)"/>
+  
+  <!-- Grid lines for tech effect -->
+  <g opacity="0.1">
+    <path d="M0 50 L1200 50 M0 100 L1200 100 M0 150 L1200 150 M0 200 L1200 200 M0 250 L1200 250 M0 300 L1200 300 M0 350 L1200 350 M0 400 L1200 400 M0 450 L1200 450 M0 500 L1200 500 M0 550 L1200 550" stroke="#00ffff" stroke-width="1"/>
+    <path d="M50 0 L50 600 M100 0 L100 600 M150 0 L150 600 M200 0 L200 600 M250 0 L250 600 M300 0 L300 600 M350 0 L350 600 M400 0 L400 600 M450 0 L450 600 M500 0 L500 600 M550 0 L550 600 M600 0 L600 600 M650 0 L650 600 M700 0 L700 600 M750 0 L750 600 M800 0 L800 600 M850 0 L850 600 M900 0 L900 600 M950 0 L950 600 M1000 0 L1000 600 M1050 0 L1050 600 M1100 0 L1100 600 M1150 0 L1150 600" stroke="#00ffff" stroke-width="1"/>
+  </g>
+  
+  <!-- Buildings back layer -->
+  <g opacity="0.6">
+    <rect x="50" y="200" width="100" height="400" fill="#1a1a2e"/>
+    <rect x="200" y="150" width="120" height="450" fill="#16213e"/>
+    <rect x="380" y="180" width="90" height="420" fill="#1a1a2e"/>
+    <rect x="520" y="120" width="110" height="480" fill="#16213e"/>
+    <rect x="680" y="160" width="100" height="440" fill="#1a1a2e"/>
+    <rect x="830" y="140" width="130" height="460" fill="#16213e"/>
+    <rect x="1000" y="170" width="100" height="430" fill="#1a1a2e"/>
+  </g>
+  
+  <!-- Buildings middle layer with neon -->
+  <g>
+    <rect x="100" y="250" width="80" height="350" fill="#2d2d44"/>
+    <rect x="100" y="250" width="80" height="350" fill="url(#neonBlue)" opacity="0.2"/>
+    <!-- Windows with glow -->
+    <g filter="url(#glow)">
+      <rect x="110" y="260" width="15" height="15" fill="#00ffff" opacity="0.8"/>
+      <rect x="135" y="260" width="15" height="15" fill="#00ffff" opacity="0.8"/>
+      <rect x="155" y="260" width="15" height="15" fill="#00ffff" opacity="0.8"/>
+      <rect x="110" y="285" width="15" height="15" fill="#00ffff" opacity="0.8"/>
+      <rect x="135" y="285" width="15" height="15" fill="#00ffff" opacity="0.8"/>
+      <rect x="155" y="285" width="15" height="15" fill="#00ffff" opacity="0.8"/>
+    </g>
+    
+    <rect x="250" y="200" width="100" height="400" fill="#2d2d44"/>
+    <rect x="250" y="200" width="100" height="400" fill="url(#neonPink)" opacity="0.2"/>
+    <!-- Digital display -->
+    <rect x="260" y="220" width="80" height="40" fill="#ff00ff" opacity="0.3" filter="url(#glow)"/>
+    <text x="300" y="245" font-family="monospace" font-size="16" fill="#ffffff" text-anchor="middle">AI DATA</text>
+    
+    <rect x="420" y="220" width="90" height="380" fill="#2d2d44"/>
+    <rect x="420" y="220" width="90" height="380" fill="url(#neonPurple)" opacity="0.2"/>
+    
+    <rect x="570" y="180" width="110" height="420" fill="#2d2d44"/>
+    <!-- Large digital screen -->
+    <rect x="580" y="200" width="90" height="60" fill="#00ffff" opacity="0.4" filter="url(#glow)"/>
+    <text x="625" y="220" font-family="monospace" font-size="12" fill="#ffffff" text-anchor="middle">NEURAL NET</text>
+    <text x="625" y="235" font-family="monospace" font-size="12" fill="#ffffff" text-anchor="middle">PROCESSING</text>
+    <text x="625" y="250" font-family="monospace" font-size="12" fill="#ffffff" text-anchor="middle">████████</text>
+    
+    <rect x="730" y="210" width="100" height="390" fill="#2d2d44"/>
+    <rect x="880" y="190" width="120" height="410" fill="#2d2d44"/>
+    <rect x="1050" y="230" width="90" height="370" fill="#2d2d44"/>
+  </g>
+  
+  <!-- Front buildings with more detail -->
+  <g>
+    <rect x="150" y="320" width="120" height="280" fill="#3d3d5c"/>
+    <!-- Neon strips -->
+    <line x1="150" y1="340" x2="270" y2="340" stroke="url(#neonBlue)" stroke-width="3" filter="url(#glow)"/>
+    <line x1="150" y1="380" x2="270" y2="380" stroke="url(#neonBlue)" stroke-width="3" filter="url(#glow)"/>
+    
+    <rect x="350" y="280" width="140" height="320" fill="#3d3d5c"/>
+    <!-- Large display board -->
+    <rect x="365" y="300" width="110" height="80" fill="#000000" opacity="0.8"/>
+    <rect x="365" y="300" width="110" height="80" stroke="#ff00ff" stroke-width="2" fill="none" filter="url(#glow)"/>
+    <text x="420" y="330" font-family="monospace" font-size="14" fill="#00ffff" text-anchor="middle">QUOTELY</text>
+    <text x="420" y="350" font-family="monospace" font-size="12" fill="#ff00ff" text-anchor="middle">AI SYSTEM</text>
+    <text x="420" y="370" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">ONLINE</text>
+    
+    <rect x="550" y="300" width="100" height="300" fill="#3d3d5c"/>
+    <rect x="700" y="260" width="130" height="340" fill="#3d3d5c"/>
+    <rect x="900" y="290" width="110" height="310" fill="#3d3d5c"/>
+  </g>
+  
+  <!-- Data streams -->
+  <g opacity="0.6">
+    <path d="M200 100 Q 400 150 600 100" stroke="url(#neonBlue)" stroke-width="2" fill="none" filter="url(#glow)"/>
+    <path d="M600 100 Q 800 150 1000 100" stroke="url(#neonPink)" stroke-width="2" fill="none" filter="url(#glow)"/>
+    
+    <!-- Animated data points -->
+    <circle r="3" fill="#00ffff" filter="url(#glow)">
+      <animateMotion dur="3s" repeatCount="indefinite">
+        <mpath href="#dataPath1"/>
+      </animateMotion>
+    </circle>
+    <path id="dataPath1" d="M200 100 Q 400 150 600 100" fill="none"/>
+    
+    <circle r="3" fill="#ff00ff" filter="url(#glow)">
+      <animateMotion dur="3s" repeatCount="indefinite" begin="1.5s">
+        <mpath href="#dataPath2"/>
+      </animateMotion>
+    </circle>
+    <path id="dataPath2" d="M600 100 Q 800 150 1000 100" fill="none"/>
+  </g>
+  
+  <!-- Flying vehicles/drones -->
+  <g opacity="0.8">
+    <ellipse cx="300" cy="120" rx="15" ry="5" fill="#00ffff" filter="url(#glow)"/>
+    <ellipse cx="750" cy="90" rx="15" ry="5" fill="#ff00ff" filter="url(#glow)"/>
+    <ellipse cx="950" cy="140" rx="15" ry="5" fill="#00ffff" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Title overlay -->
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" opacity="0.9">
+    AI TECHNOLOGY INNOVATION
+  </text>
+  <text x="600" y="530" font-family="Arial, sans-serif" font-size="16" fill="#00ffff" text-anchor="middle" opacity="0.8">
+    The Future of Insurance Technology
+  </text>
+</svg>

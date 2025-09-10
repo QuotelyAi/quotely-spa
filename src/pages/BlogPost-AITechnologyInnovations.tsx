@@ -37,15 +37,13 @@ const BlogPostAITechnologyInnovations: React.FC = () => {
               </div>
             </div>
 
-            {/* Hero Image Placeholder */}
-            <div className="mb-12 rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-primary-600 to-secondary-600 p-16">
-              <div className="text-center text-white">
-                <Brain className="w-32 h-32 mx-auto mb-6 opacity-90" />
-                <h2 className="text-3xl font-bold mb-4">AI Technology Innovation</h2>
-                <p className="text-xl text-white/90 max-w-2xl mx-auto">
-                  A futuristic cityscape illuminated by neon lights, showcasing towering digital screens displaying AI technology and data analytics
-                </p>
-              </div>
+            {/* Hero Image */}
+            <div className="mb-12 rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="/images/blog/ai-technology-innovations-hero.svg"
+                alt="A futuristic cityscape illuminated by neon lights, showcasing towering digital screens displaying AI technology and data analytics"
+                className="w-full h-auto"
+              />
             </div>
           </header>
 

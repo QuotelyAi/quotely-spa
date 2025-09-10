@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2B4C8C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e3a78;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#162853;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="screenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0080ff;stop-opacity:0.4" />
+    </linearGradient>
+    
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1"/>
+    </pattern>
+    <rect width="1200" height="600" fill="url(#grid)"/>
+  </g>
+  
+  <!-- Central Dashboard -->
+  <g transform="translate(600, 300)">
+    <!-- Main screen -->
+    <rect x="-300" y="-180" width="600" height="360" rx="10" fill="#1a1a2e" stroke="#FFD700" stroke-width="2" filter="url(#glow)"/>
+    <rect x="-290" y="-170" width="580" height="340" rx="8" fill="#0f1419"/>
+    
+    <!-- Dashboard header -->
+    <rect x="-290" y="-170" width="580" height="40" fill="url(#accentGradient)" opacity="0.2"/>
+    <text x="0" y="-145" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFD700" text-anchor="middle">
+      QUOTELY OPERATING SYSTEM
+    </text>
+    
+    <!-- Dashboard sections -->
+    <!-- Policy Management -->
+    <g transform="translate(-200, -80)">
+      <rect x="0" y="0" width="160" height="100" rx="5" fill="#1e3a78" opacity="0.3"/>
+      <rect x="0" y="0" width="160" height="25" rx="5" fill="#2B4C8C" opacity="0.5"/>
+      <text x="80" y="17" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+        Policy Management
+      </text>
+      <circle cx="20" cy="50" r="15" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.6"/>
+      <text x="20" y="55" font-family="Arial, sans-serif" font-size="10" fill="#FFD700" text-anchor="middle">94%</text>
+      <rect x="50" y="40" width="100" height="8" rx="4" fill="#2B4C8C" opacity="0.3"/>
+      <rect x="50" y="40" width="75" height="8" rx="4" fill="#FFD700" opacity="0.7"/>
+      <rect x="50" y="55" width="100" height="8" rx="4" fill="#2B4C8C" opacity="0.3"/>
+      <rect x="50" y="55" width="85" height="8" rx="4" fill="#00ffff" opacity="0.7"/>
+      <rect x="50" y="70" width="100" height="8" rx="4" fill="#2B4C8C" opacity="0.3"/>
+      <rect x="50" y="70" width="90" height="8" rx="4" fill="#FFD700" opacity="0.7"/>
+    </g>
+    
+    <!-- CRM Integration -->
+    <g transform="translate(20, -80)">
+      <rect x="0" y="0" width="160" height="100" rx="5" fill="#1e3a78" opacity="0.3"/>
+      <rect x="0" y="0" width="160" height="25" rx="5" fill="#2B4C8C" opacity="0.5"/>
+      <text x="80" y="17" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+        CRM Integration
+      </text>
+      <path d="M30 50 L50 40 L70 55 L90 45 L110 50 L130 35" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.8"/>
+      <circle cx="30" cy="50" r="3" fill="#00ffff"/>
+      <circle cx="50" cy="40" r="3" fill="#00ffff"/>
+      <circle cx="70" cy="55" r="3" fill="#00ffff"/>
+      <circle cx="90" cy="45" r="3" fill="#00ffff"/>
+      <circle cx="110" cy="50" r="3" fill="#00ffff"/>
+      <circle cx="130" cy="35" r="3" fill="#00ffff"/>
+      <text x="80" y="85" font-family="Arial, sans-serif" font-size="10" fill="#FFD700" text-anchor="middle">
+        +42% Efficiency
+      </text>
+    </g>
+    
+    <!-- Claims Processing -->
+    <g transform="translate(-200, 40)">
+      <rect x="0" y="0" width="160" height="100" rx="5" fill="#1e3a78" opacity="0.3"/>
+      <rect x="0" y="0" width="160" height="25" rx="5" fill="#2B4C8C" opacity="0.5"/>
+      <text x="80" y="17" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+        Claims Processing
+      </text>
+      <rect x="10" y="35" width="140" height="55" rx="3" fill="#0f1419" opacity="0.5"/>
+      <rect x="15" y="40" width="130" height="8" rx="2" fill="#FFD700" opacity="0.3"/>
+      <rect x="15" y="40" width="110" height="8" rx="2" fill="#FFD700" opacity="0.8"/>
+      <rect x="15" y="52" width="130" height="8" rx="2" fill="#00ffff" opacity="0.3"/>
+      <rect x="15" y="52" width="95" height="8" rx="2" fill="#00ffff" opacity="0.8"/>
+      <rect x="15" y="64" width="130" height="8" rx="2" fill="#FFD700" opacity="0.3"/>
+      <rect x="15" y="64" width="120" height="8" rx="2" fill="#FFD700" opacity="0.8"/>
+      <text x="80" y="82" font-family="monospace" font-size="9" fill="#00ffff" text-anchor="middle">
+        Processing: 3,247
+      </text>
+    </g>
+    
+    <!-- Compliance -->
+    <g transform="translate(20, 40)">
+      <rect x="0" y="0" width="160" height="100" rx="5" fill="#1e3a78" opacity="0.3"/>
+      <rect x="0" y="0" width="160" height="25" rx="5" fill="#2B4C8C" opacity="0.5"/>
+      <text x="80" y="17" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+        Compliance
+      </text>
+      <g transform="translate(55, 45)">
+        <circle cx="25" cy="25" r="20" fill="none" stroke="#2B4C8C" stroke-width="8" opacity="0.3"/>
+        <circle cx="25" cy="25" r="20" fill="none" stroke="#FFD700" stroke-width="8" opacity="0.8"
+                stroke-dasharray="95 30" stroke-dashoffset="-20" transform="rotate(-90 25 25)"/>
+        <text x="25" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFD700" text-anchor="middle">
+          98%
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Connecting nodes -->
+  <g opacity="0.6">
+    <!-- Left connections -->
+    <circle cx="150" cy="200" r="40" fill="#1e3a78" stroke="#FFD700" stroke-width="2"/>
+    <text x="150" y="205" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+      Carriers
+    </text>
+    <line x1="190" y1="200" x2="300" y2="250" stroke="#FFD700" stroke-width="2" opacity="0.5"/>
+    
+    <circle cx="150" cy="400" r="40" fill="#1e3a78" stroke="#00ffff" stroke-width="2"/>
+    <text x="150" y="405" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+      Agents
+    </text>
+    <line x1="190" y1="400" x2="300" y2="350" stroke="#00ffff" stroke-width="2" opacity="0.5"/>
+    
+    <!-- Right connections -->
+    <circle cx="1050" cy="200" r="40" fill="#1e3a78" stroke="#FFD700" stroke-width="2"/>
+    <text x="1050" y="205" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+      Analytics
+    </text>
+    <line x1="1010" y1="200" x2="900" y2="250" stroke="#FFD700" stroke-width="2" opacity="0.5"/>
+    
+    <circle cx="1050" cy="400" r="40" fill="#1e3a78" stroke="#00ffff" stroke-width="2"/>
+    <text x="1050" y="405" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+      Reports
+    </text>
+    <line x1="1010" y1="400" x2="900" y2="350" stroke="#00ffff" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <!-- Floating data elements -->
+  <g opacity="0.4">
+    <rect x="100" y="50" width="80" height="30" rx="5" fill="#FFD700" opacity="0.3"/>
+    <text x="140" y="70" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">API</text>
+    
+    <rect x="1020" y="50" width="80" height="30" rx="5" fill="#00ffff" opacity="0.3"/>
+    <text x="1060" y="70" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">REAL-TIME</text>
+    
+    <rect x="100" y="520" width="100" height="30" rx="5" fill="#FFD700" opacity="0.3"/>
+    <text x="150" y="540" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">AUTOMATED</text>
+    
+    <rect x="1000" y="520" width="100" height="30" rx="5" fill="#00ffff" opacity="0.3"/>
+    <text x="1050" y="540" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">CLOUD-BASED</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFD700" text-anchor="middle">
+    INSURTECH OPERATING SYSTEM PLATFORM
+  </text>
+  <text x="600" y="75" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" opacity="0.8">
+    Unified Insurance Agency Automation & Digital Transformation
+  </text>
+</svg>

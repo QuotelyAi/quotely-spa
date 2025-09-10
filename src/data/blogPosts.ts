@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '12 min read',
     category: 'Digital Transformation',
     featured: true,
-    image: undefined,
+    image: '/images/blog/insurtech-operating-system-hero.svg',
     content: `
 <div class="blog-content">
   <img src="https://storage.googleapis.com/content-assistant-images-temp/a2728ec4-e1bd-4b75-9118-b389c4c8424f.webp" alt="Insurance professionals collaborating on an insurtech platform in a modern office setting" class="w-full rounded-lg mb-8">
@@ -365,7 +365,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '25 min read',
     category: 'AI & Technology',
     featured: true,
-    image: undefined,
+    image: '/images/blog/ai-technology-innovations-hero.svg',
     content: 'AI Technology article content'
   }
 ];
