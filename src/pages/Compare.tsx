@@ -34,7 +34,7 @@ const Compare: React.FC = () => {
       period: '',
       description: 'Tailored for large agencies',
       highlight: false,
-      features: ['Unlimited quotes', 'Custom integrations', 'Dedicated support', 'White-glove onboarding'],
+      features: ['Custom integrations', 'Dedicated support', 'White-glove onboarding', 'Priority features'],
       color: 'secondary'
     }
   ];
