@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, User, Clock, Brain, Cpu, TrendingUp, Globe, Zap, Shield } from 'lucide-react';
+import { ArrowLeft, Calendar, User, Clock, Cpu, TrendingUp, Globe, Zap, Shield } from 'lucide-react';
 import SEO from '../components/SEO';
 
 const BlogPostAITechnologyInnovations: React.FC = () => {
