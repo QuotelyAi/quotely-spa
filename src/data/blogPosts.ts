@@ -209,7 +209,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '8 min read',
     category: 'AI & Technology',
     featured: false,
-    image: '/images/blog/ai-legacy-raters-hero.svg',
+    image: 'https://storage.googleapis.com/content-assistant-images-temp/ai-legacy-raters-hero.webp',
     content: `
 <div class="blog-content">
   <p class="lead">The insurance industry is experiencing a paradigm shift as artificial intelligence transforms how policies are rated and priced. Legacy rating systems, once the backbone of insurance operations, are struggling to keep pace with modern demands.</p>
@@ -278,7 +278,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '6 min read',
     category: 'Cost Analysis',
     featured: false,
-    image: '/images/blog/quotely-ai-revolution-hero.svg',
+    image: 'https://storage.googleapis.com/content-assistant-images-temp/quotely-ai-revolution-hero.webp',
     content: `
 <div class="blog-content">
   <p class="lead">Insurance agencies face mounting pressure to reduce operational costs while improving service quality. Quotely's AI-powered platform offers a revolutionary solution: 24/7 operation at just $1.37 per hour.</p>
@@ -354,5 +354,18 @@ export const blogPosts: BlogPost[] = [
   </div>
 </div>
     `
+  },
+  {
+    id: 'ai-technology-innovations',
+    slug: 'ai-technology-innovations',
+    title: 'AI Technology: Key Innovations Shaping Our Future',
+    excerpt: 'Explore key AI innovations shaping our future, including advancements in machine learning, natural language processing, and computer vision. Learn how AI is transforming industries and driving economic growth.',
+    author: 'Quotely I/O → A/I → UI/UX → Ø',
+    date: '2025-09-09',
+    readTime: '25 min read',
+    category: 'AI & Technology',
+    featured: true,
+    image: 'https://storage.googleapis.com/content-assistant-images-temp/a-a-futuristic-cityscape-illuminate-d7487a70-26724732-099c-4590-b2c5-830025c2be59.webp',
+    content: 'AI Technology article content'
   }
 ];

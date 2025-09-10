@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-primary-800 border-b border-white/10 sticky top-0 z-50">
-      <nav className="container-wrapper">
+      <nav className="container-wrapper" role="navigation" aria-label="Main navigation">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
@@ -57,6 +57,8 @@ const Header: React.FC = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-accent-500 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent-500"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

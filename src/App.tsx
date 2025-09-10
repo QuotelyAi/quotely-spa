@@ -9,6 +9,9 @@ import Compare from './pages/Compare';
 import FAQ from './pages/FAQ';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import BlogPostAITechnologyInnovations from './pages/BlogPost-AITechnologyInnovations';
+import BlogPostAILegacyRaters from './pages/BlogPost-AILegacyRaters';
+import BlogPostQuotelyAIRevolution from './pages/BlogPost-QuotelyAIRevolution';
 import Contact from './pages/Contact';
 
 function App() {
@@ -17,7 +20,7 @@ function App() {
       <Router>
         <div className="min-h-screen flex flex-col bg-gray-50">
           <Header />
-          <main className="flex-grow">
+          <main className="flex-grow" role="main">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/pricing" element={<Pricing />} />
@@ -25,6 +28,9 @@ function App() {
               <Route path="/compare" element={<Compare />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/ai-technology-innovations" element={<BlogPostAITechnologyInnovations />} />
+              <Route path="/blog/ai-legacy-raters" element={<BlogPostAILegacyRaters />} />
+              <Route path="/blog/quotely-ai-revolution" element={<BlogPostQuotelyAIRevolution />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>

@@ -31,11 +31,11 @@ interface AppStore {
 }
 
 const defaultCalculatorData: CalculatorData = {
-  numAgents: 5,
-  quotesPerAgent: 20,
-  conversionRate: 15,
-  averagePremium: 1500,
-  commissionRate: 10,
+  numAgents: 1,
+  quotesPerAgent: 17,
+  conversionRate: 20,
+  averagePremium: 1600,
+  commissionRate: 12.5,
 };
 
 const defaultFormData: FormData = {

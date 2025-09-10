@@ -25,11 +25,11 @@ export default {
           200: '#ffc199',
           300: '#ffa980',
           400: '#ff9166',
-          500: '#FF6B35',  // Main orange
-          600: '#e55a2b',
-          700: '#cc4a21',
-          800: '#b33917',
-          900: '#99290d',
+          500: '#D54309',  // Darker orange for better contrast (WCAG AA compliant)
+          600: '#C13A08',
+          700: '#A83207',
+          800: '#8F2A06',
+          900: '#762305',
         },
         accent: {
           50: '#fffce6',

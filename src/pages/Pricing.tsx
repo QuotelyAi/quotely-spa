@@ -14,9 +14,23 @@ const Pricing: React.FC = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: theme.colors.textPrimary }}>
             {pricing.title}
           </h1>
-          <p className="text-xl" style={{ color: theme.colors.textSecondary }}>
+          <p className="text-xl mb-8" style={{ color: theme.colors.textSecondary }}>
             {pricing.subtitle}
           </p>
+          
+          {/* YouTube Shorts Video Embed */}
+          <div className="max-w-md mx-auto mb-8">
+            <div className="relative" style={{ paddingBottom: '177.78%' /* 16:9 aspect ratio for Shorts */ }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl"
+                src="https://www.youtube.com/embed/wbBMxIYdlHw"
+                title="Quotely Platform Demo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
 
         {/* Core Platform Pricing */}

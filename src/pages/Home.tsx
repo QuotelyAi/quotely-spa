@@ -53,13 +53,32 @@ const Home: React.FC = () => {
               </div>
               
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <a href="mailto:sales@tryquotely.com" className="btn-primary">
                   Get Early Access <ArrowRight className="ml-2" size={20} />
                 </a>
                 <Link to="/calculator" className="btn-secondary border-white/30 hover:border-white">
                   Calculate ROI
                 </Link>
+              </div>
+
+              {/* YouTube Shorts Video */}
+              <div className="mt-12">
+                <div className="max-w-sm mx-auto lg:mx-0">
+                  <div className="relative rounded-xl overflow-hidden shadow-2xl" style={{ paddingBottom: '177.78%' /* 9:16 aspect ratio for Shorts */ }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full"
+                      src="https://www.youtube.com/embed/a_V2hbQGKtE"
+                      title="Quotely Platform Demo"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  </div>
+                  <p className="text-white/80 text-sm mt-4 text-center lg:text-left">
+                    Watch how Quotely transforms insurance operations
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -79,7 +98,7 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="card">
-              <Zap className="text-secondary-500 mb-4" size={48} />
+              <Zap className="text-secondary-600 mb-4" size={48} />
               <h3 className="text-xl font-semibold mb-2">Modern Web Platform</h3>
               <p className="text-neutral-600">
                 Cloud-based solution accessible from any device with responsive design for desktop and mobile.
@@ -87,7 +106,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="card">
-              <Shield className="text-secondary-500 mb-4" size={48} />
+              <Shield className="text-secondary-600 mb-4" size={48} />
               <h3 className="text-xl font-semibold mb-2">Verified Integrations</h3>
               <p className="text-neutral-600">
                 Authentic connections with TurboRater and Momentum AMP for accurate carrier data.
@@ -95,7 +114,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="card">
-              <TrendingUp className="text-secondary-500 mb-4" size={48} />
+              <TrendingUp className="text-secondary-600 mb-4" size={48} />
               <h3 className="text-xl font-semibold mb-2">Professional Tools</h3>
               <p className="text-neutral-600">
                 Designed specifically for insurance professionals who demand accuracy and reliability.
@@ -103,7 +122,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="card">
-              <Users className="text-secondary-500 mb-4" size={48} />
+              <Users className="text-secondary-600 mb-4" size={48} />
               <h3 className="text-xl font-semibold mb-2">Team Features</h3>
               <p className="text-neutral-600">
                 Collaborate effectively with your agency team through our modern interface.
@@ -111,7 +130,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="card">
-              <Clock className="text-secondary-500 mb-4" size={48} />
+              <Clock className="text-secondary-600 mb-4" size={48} />
               <h3 className="text-xl font-semibold mb-2">24/7 AI Operation</h3>
               <p className="text-neutral-600">
                 Platform operates continuously at just $1.37/hour compared to traditional staffing costs.
@@ -119,11 +138,38 @@ const Home: React.FC = () => {
             </div>
 
             <div className="card">
-              <Award className="text-secondary-500 mb-4" size={48} />
+              <Award className="text-secondary-600 mb-4" size={48} />
               <h3 className="text-xl font-semibold mb-2">Professional Support</h3>
               <p className="text-neutral-600">
                 Contact our team at sales@tryquotely.com for personalized assistance.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Demo Section */}
+      <section className="bg-neutral-50 section-padding">
+        <div className="container-wrapper">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              See Quotely in Action
+            </h2>
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+              Watch how we're revolutionizing insurance quoting
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/7Pdwd-RArO8"
+                title="Quotely Platform Demo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -134,19 +180,19 @@ const Home: React.FC = () => {
         <div className="container-wrapper">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-secondary-500 mb-2">24/7</div>
+              <div className="text-4xl font-bold text-secondary-600 mb-2">24/7</div>
               <p className="text-neutral-700">AI Operation</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-secondary-500 mb-2">$1.37</div>
+              <div className="text-4xl font-bold text-secondary-600 mb-2">$1.37</div>
               <p className="text-neutral-700">Cost Per Hour</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-secondary-500 mb-2">100%</div>
+              <div className="text-4xl font-bold text-secondary-600 mb-2">100%</div>
               <p className="text-neutral-700">Web-Based</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-secondary-500 mb-2">2025</div>
+              <div className="text-4xl font-bold text-secondary-600 mb-2">2025</div>
               <p className="text-neutral-700">Platform Launch</p>
             </div>
           </div>
