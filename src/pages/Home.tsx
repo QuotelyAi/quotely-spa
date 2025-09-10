@@ -68,7 +68,7 @@ const Home: React.FC = () => {
                   <div className="relative rounded-xl overflow-hidden shadow-2xl" style={{ paddingBottom: '177.78%' /* 9:16 aspect ratio for Shorts */ }}>
                     <iframe
                       className="absolute top-0 left-0 w-full h-full"
-                      src="https://www.youtube.com/embed/a_V2hbQGKtE"
+                      src="https://www.youtube.com/embed/phN98KiELf8"
                       title="Quotely Platform Demo"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
