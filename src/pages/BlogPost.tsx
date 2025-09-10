@@ -60,7 +60,8 @@ const BlogPost: React.FC = () => {
 
         {/* Content */}
         <div 
-          className="prose prose-lg max-w-none"
+          className="prose prose-lg max-w-none text-gray-700"
+          style={{ color: '#374151' }}
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
