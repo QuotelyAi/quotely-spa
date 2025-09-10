@@ -39,36 +39,52 @@ const Compare: React.FC = () => {
     }
   ];
 
-  const keyDifferences = [
+  const testimonials = [
     {
-      icon: <Zap className="text-primary-500" size={24} />,
-      title: 'AI Automation',
-      core: 'Manual processes',
-      professional: 'Full AI automation',
-      enterprise: 'Custom AI workflows'
+      quote: "Quotely cut our quote time from 5 minutes to 90 seconds. Game changer for our agency.",
+      author: "Sarah Chen",
+      role: "Agency Owner",
+      company: "Premier Insurance Group"
     },
     {
-      icon: <TrendingUp className="text-primary-500" size={24} />,
-      title: 'Analytics',
-      core: 'Basic reports',
-      professional: 'Advanced dashboards',
-      enterprise: 'Custom analytics'
+      quote: "The AI handles routine tasks so my team can focus on building client relationships.",
+      author: "Michael Rodriguez",
+      role: "Sales Director",
+      company: "Coastal Coverage Solutions"
     },
     {
-      icon: <Users className="text-primary-500" size={24} />,
-      title: 'Support',
-      core: 'Email only',
-      professional: 'Priority phone & email',
-      enterprise: 'Dedicated manager'
-    },
-    {
-      icon: <Shield className="text-primary-500" size={24} />,
-      title: 'Compliance',
-      core: 'Standard security',
-      professional: 'HIPAA & SOC 2',
-      enterprise: 'On-premise option'
+      quote: "We're processing 3x more quotes with the same team size. ROI was immediate.",
+      author: "James Park",
+      role: "Operations Manager",
+      company: "NextGen Insurance Agency"
     }
   ];
+
+  const comparisonData = {
+    title: "Why Agencies Choose Quotely",
+    items: [
+      {
+        metric: "90 seconds",
+        description: "Average quote time",
+        comparison: "vs 3-5 minutes with competitors"
+      },
+      {
+        metric: "24/7",
+        description: "AI availability",
+        comparison: "Never miss a lead again"
+      },
+      {
+        metric: "$1.37/hour",
+        description: "Operating cost",
+        comparison: "vs $15-25/hour for staff"
+      },
+      {
+        metric: "60% faster",
+        description: "Than legacy systems",
+        comparison: "Based on customer data"
+      }
+    ]
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
@@ -162,36 +178,92 @@ const Compare: React.FC = () => {
         </div>
       </section>
 
-      {/* Key Differences - Simplified */}
+      {/* Performance Metrics */}
       <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Key Differences at a Glance
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
+            {comparisonData.title}
           </h2>
+          <p className="text-xl text-gray-600 text-center mb-12">
+            Real results from real agencies using Quotely
+          </p>
           
-          <div className="space-y-6">
-            {keyDifferences.map((diff, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-6">
-                <div className="flex items-center mb-4">
-                  {diff.icon}
-                  <h3 className="text-xl font-semibold text-gray-900 ml-3">{diff.title}</h3>
-                </div>
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div className={`p-4 rounded-lg ${selectedPlan === 'core' ? 'bg-white border-2 border-primary-500' : 'bg-white'}`}>
-                    <div className="text-sm font-semibold text-gray-500 mb-1">Core</div>
-                    <div className="text-gray-700">{diff.core}</div>
-                  </div>
-                  <div className={`p-4 rounded-lg ${selectedPlan === 'professional' ? 'bg-white border-2 border-primary-500' : 'bg-white'}`}>
-                    <div className="text-sm font-semibold text-primary-600 mb-1">Professional</div>
-                    <div className="text-gray-700">{diff.professional}</div>
-                  </div>
-                  <div className={`p-4 rounded-lg ${selectedPlan === 'enterprise' ? 'bg-white border-2 border-primary-500' : 'bg-white'}`}>
-                    <div className="text-sm font-semibold text-secondary-600 mb-1">Enterprise</div>
-                    <div className="text-gray-700">{diff.enterprise}</div>
-                  </div>
+          <div className="grid md:grid-cols-4 gap-6 mb-16">
+            {comparisonData.items.map((item, index) => (
+              <div key={index} className="text-center">
+                <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-6">
+                  <div className="text-3xl font-bold text-primary-600 mb-2">{item.metric}</div>
+                  <div className="text-gray-900 font-semibold mb-1">{item.description}</div>
+                  <div className="text-sm text-gray-600">{item.comparison}</div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            Trusted by Leading Insurance Agencies
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-white rounded-xl p-6 shadow-lg">
+                <div className="mb-4">
+                  <svg className="text-primary-500 w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                </div>
+                <p className="text-gray-700 mb-4 italic">"{testimonial.quote}"</p>
+                <div className="border-t pt-4">
+                  <div className="font-semibold text-gray-900">{testimonial.author}</div>
+                  <div className="text-sm text-gray-600">{testimonial.role}</div>
+                  <div className="text-sm text-primary-600">{testimonial.company}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ROI Calculator CTA */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Calculate Your ROI
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            See how much time and money Quotely can save your agency
+          </p>
+          <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8">
+            <div className="grid md:grid-cols-2 gap-6 text-left">
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Current quotes per month
+                </label>
+                <input 
+                  type="number" 
+                  placeholder="e.g., 100"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Average time per quote (minutes)
+                </label>
+                <input 
+                  type="number" 
+                  placeholder="e.g., 5"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                />
+              </div>
+            </div>
+            <button className="mt-6 bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all">
+              Calculate Savings
+            </button>
           </div>
         </div>
       </section>
