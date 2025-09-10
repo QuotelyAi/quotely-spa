@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Check, Play, ArrowRight, Zap, Shield, TrendingUp, Users } from 'lucide-react';
+import { Check, Play, ArrowRight } from 'lucide-react';
 
 const Compare: React.FC = () => {
   const [selectedPlan, setSelectedPlan] = useState('professional');
