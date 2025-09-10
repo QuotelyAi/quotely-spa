@@ -64,7 +64,7 @@ const Home: React.FC = () => {
 
               {/* YouTube Shorts Video */}
               <div className="mt-12">
-                <div className="max-w-sm mx-auto lg:mx-0">
+                <div className="max-w-sm mx-auto">
                   <div className="relative rounded-xl overflow-hidden shadow-2xl" style={{ paddingBottom: '177.78%' /* 9:16 aspect ratio for Shorts */ }}>
                     <iframe
                       className="absolute top-0 left-0 w-full h-full"
@@ -75,7 +75,7 @@ const Home: React.FC = () => {
                       allowFullScreen
                     />
                   </div>
-                  <p className="text-white/80 text-sm mt-4 text-center lg:text-left">
+                  <p className="text-white/80 text-sm mt-4 text-center">
                     Watch how Quotely transforms insurance operations
                   </p>
                 </div>
